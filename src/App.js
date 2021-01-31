@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-
   
 function App() {
     const name = "Emma";
@@ -15,6 +14,7 @@ function App() {
   return (
     <div className="App">
        <button onClick={buttonFunction}>Button</button>
+       <input type="text" onChange={onChangeFunction}></input>
     <head> 
         <title>Emma's Personal Webpage</title>
     </head>
@@ -22,7 +22,7 @@ function App() {
         <h1 className="purple-text">Hi, my name is Emma!</h1>
       </div>
         <p>I am a sophomore at Bates majoring in Biochemistry and minoring in Education. I am a member of the Bates debate team, and work as a Community Outreach Fellow to coordinate tutors in local schools.</p>
-        <img class="smallimage" src="./IMG_8636 (2) 4.jpg"></img>
+        <img class="smallimage" src="./20190821_160413 1.jpg"></img>
             <h2 className="purple-text">Hobbies</h2>
             <body className="leftalign">
           <ul>
@@ -40,7 +40,7 @@ function App() {
               <li>I played bass drum in my high school's marching band</li>
           </ol>
             <div>
-              <img class="smallimage" src="./20190821_160413 1.jpg"></img>
+              <img class="smallimage" src="./IMG_8636 (2) 4"></img>
             </div>
           </body>
     </div>
