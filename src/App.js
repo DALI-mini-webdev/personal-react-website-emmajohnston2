@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+import Emma from './Emma2.jpg';
+import Rosie from './Rosie.jpg';
 import './App.css';
+import Navbar from "./components/Navbar/Navbar"
+import showBoard from "./components/favtvShows/showBoard"
   
 function App() {
-    const name = "Emma";
-    var nameComponent = (name === "Emma") ?
-    <p>hi my name is {name}</p> : <p>my  name is not Emma</p>;
     const buttonFunction = () => {
       console.log("the button was clicked");
     }   
@@ -13,6 +13,8 @@ function App() {
     }
   return (
     <div className="App">
+       <Navbar />
+       <showBoard />
        <button onClick={buttonFunction}>Button</button>
        <input type="text" onChange={onChangeFunction}></input>
     <head> 
@@ -22,7 +24,8 @@ function App() {
         <h1 className="purple-text">Hi, my name is Emma!</h1>
       </div>
         <p>I am a sophomore at Bates majoring in Biochemistry and minoring in Education. I am a member of the Bates debate team, and work as a Community Outreach Fellow to coordinate tutors in local schools.</p>
-        <img class="smallimage" src="./20190821_160413 1.jpg"></img>
+        <img class="smallimage" src={Emma}></img>
+        <hr></hr>
             <h2 className="purple-text">Hobbies</h2>
             <body className="leftalign">
           <ul>
@@ -39,10 +42,8 @@ function App() {
               <li>I am from Bradenton, Florida</li>
               <li>I played bass drum in my high school's marching band</li>
           </ol>
-            <div>
-              <img class="smallimage" src="./IMG_8636 (2) 4"></img>
-            </div>
           </body>
+          <div><img class="smallimage" src={Rosie}></img></div>
     </div>
   );
 }
