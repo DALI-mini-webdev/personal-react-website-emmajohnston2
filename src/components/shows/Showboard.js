@@ -39,9 +39,9 @@ class Showboard extends Component {
       this.setState({shows: this.state.shows.delete(id)})
     }
 
-updatedMainChar = (id, field) => {
-  this.state.shows.update(id, (n) => {
-    return Object.assign({}, n, field)
+MainCharUpdate = (id, field) => {
+  this.setState({shows:this.state.shows.update(id, (n) => {
+    return Object.assign({}, n, field); })
   })
 }
 
@@ -55,7 +55,7 @@ updatedMainChar = (id, field) => {
             mainchar={shows.mainchar}
             id={id}
             delete={this.delete}
-            update={this.updatedMainMhar}
+            update={this.MainCharUpdate}
             />
           );
         }

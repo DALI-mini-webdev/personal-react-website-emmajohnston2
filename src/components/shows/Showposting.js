@@ -26,11 +26,16 @@ class ShowPosting extends Component {
  }
 
 update = () => {
-  this.props.update(this.props.id, this.state.updateMainChar)
+  console.log('edited');
+  var updatedMainChar = {
+    mainchar: this.state.updatedMainChar
+  }
+  this.props.update(this.props.id, updatedMainChar);
+  this.setState({editing: false})
 }
 
  render() {
-   let editOptions = null;
+   var editOptions = null;
    if(this.state.editing) {
      editOptions = (
        <div>
