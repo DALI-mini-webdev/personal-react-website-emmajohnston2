@@ -3,6 +3,7 @@ import Rosie from './Rosie.jpg';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar"
 import Showboard from "./components/shows/Showboard"
+import Catfacts from "./components/Catfacts/Catfacts"
   
 function App() {
     const buttonFunction = () => {
@@ -42,6 +43,7 @@ function App() {
           </ol>
           </body>
           <div><img className="smallimage" src={Rosie}></img></div>
+          <Catfacts />
     </div>
   );
 }
