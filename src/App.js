@@ -4,20 +4,20 @@ import './App.css';
 import Navbar from "./components/Navbar/Navbar"
 import Showboard from "./components/shows/Showboard"
 import Catfacts from "./components/Catfacts/Catfacts"
+import firebase from "./firebase/index"
+import ToDoBoard from './components/ToDoBoard'
   
 function App() {
-    const buttonFunction = () => {
-      console.log("the button was clicked");
-    }   
-    const onChangeFunction = (event) => {
-      console.log(event.target.value);
-    }
+    console.log(firebase);
+    console.log(firebase.db);
   return (
     <div className="App">
        <Navbar />
+       <hr></hr>
        <Showboard />
-       <button onClick={buttonFunction}>Button</button>
-       <input type="text" onChange={onChangeFunction}></input>
+       <hr></hr>
+       <ToDoBoard />
+       <hr></hr>
         <title>Emma's Personal Webpage</title>
       <div>
         <h1 className="purple-text">Hi, my name is Emma!</h1>
